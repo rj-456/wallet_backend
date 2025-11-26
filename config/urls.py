@@ -16,7 +16,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-<<<<<<< HEAD
 from rest_framework.authtoken.views import obtain_auth_token # Built-in Login
 from expenses.views import ExpenseList, ExpenseDetail, RegisterView
 
@@ -26,9 +25,4 @@ urlpatterns = [
     path('api/login/', obtain_auth_token),              # Login
     path('api/expenses/', ExpenseList.as_view()),       # CRUD
     path('api/expenses/<int:pk>/', ExpenseDetail.as_view()),
-=======
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
->>>>>>> a1c5df22701f16e43c62c5ecea222cdf9b6559e6
 ]
