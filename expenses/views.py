@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from rest_framework import generics, permissions
 from .models import Expense
 from .serializers import ExpenseSerializer, UserSerializer
@@ -28,8 +27,3 @@ class ExpenseDetail(generics.RetrieveUpdateDestroyAPIView):
 
     def get_queryset(self):
         return Expense.objects.filter(owner=self.request.user)
-=======
-from django.shortcuts import render
-
-# Create your views here.
->>>>>>> a1c5df22701f16e43c62c5ecea222cdf9b6559e6
